@@ -1,0 +1,119 @@
+/* Write your code here. */
+
+body {
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-Container {
+  background-color: #ffffff;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: "Roboto";
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.card {
+  width: 80%;
+  height: 80%;
+}
+
+.box-text {
+  font-family: "Bree Serif";
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small {
+  background-color: #fbbf24;
+  min-width: 10%;
+  min-height: 10%;
+}
+
+.medium {
+  background-color: #38bdf8;
+  min-width: 20%;
+  min-height: 20%;
+}
+
+.large {
+  background-color: #ec4899;
+  min-width: 30%;
+  min-height: 50%;
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 25px;
+  }
+
+  .card {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .box-text {
+    font-size: 12px;
+  }
+  .small {
+    width: 40px;
+    height: 50px;
+  }
+
+  .medium {
+    width: 50px;
+    height: 60px;
+  }
+
+  .large {
+    width: 60px;
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .card {
+    width: 85%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    /* margin-bottom: 20px; */
+  }
+
+  .box-text {
+    font-size: 20px;
+  }
+  .small {
+    height: 20%;
+  }
+
+  .medium {
+    height: 35%;
+  }
+
+  .large {
+    height: 70%;
+  }
+}
